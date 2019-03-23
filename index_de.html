@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="theme-color" content="#2196f3">
+   <meta charset="utf-8">
+   <title>Appartement Marija</title>
+   <link rel="shortcut icon" href="images/logo.png">
+   <link href="css/materialize.css" type="text/css" rel="stylesheet" />
+   <link href="css/style.css" type="text/css" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <script src="js/jquery.js"></script>
+   <script src="js/materialize.js"></script>
+   <script src="js/javascript.js"></script>
+</head>
+
+<body>
+   <nav class="white">
+      <div class="zastave">
+         <div class="zastava"><a href="index_it.html"><img src="images/it.png" alt="it"></a></div>
+         <div class="zastava active-zastava"><a href="index_de.html"><img src="images/de.png" alt="de"></a></div>
+         <div class="zastava"><a href="index_fr.html"><img src="images/fr.png" alt="fr"></a></div>
+         <div class="zastava"><a href="index_gb.html"><img src="images/gb.png" alt="gb"></a></div>
+         <div class="zastava"><a href="index.html"><img src="images/hr.png" alt="hr"></a></div>
+      </div>
+   </nav>
+
+   <div class="parallax-container">
+      <div class="section no-pad-bot">
+         <div class="container">
+            <h1 class="header center blue-text">Appartement Marija</h1>
+            <div class="row center">
+               <h5 class="header col s12 light">Willkommen auf der Seite von Appartement Marija</h5>
+            </div>
+            <div class="row center">
+               <a href="slike.html" class="btn-large waves-effect waves-light blue">Schauen Sie
+                  sich die Fotos</a>
+            </div>
+         </div>
+      </div>
+      <div class="parallax"><img src="images/background1.jpg" alt="Rab 1"></div>
+   </div>
+
+   <div class="container">
+      <div class="section">
+         <div class="row">
+            <div class="col s12 m6">
+               <div class="icon-block">
+                  <h2 class="center"><i class="material-icons"><a href="https://www.google.hr/maps/place/%C5%A0oti%C4%87/@44.758935,14.7654303,17z/data=!3m1!4b1!4m2!3m1!1s0x4763af04e3d3d76d:0x926a22f84dfcf808">language</a></i></h2>
+                  <h5 class="center">Wo sind wir?</h5>
+                  <p class="light">Das Apartment Marija befindet sich auf der Insel Rab in Banjol 159. Es ist modern
+                     eingerichtet, klimatisiert und verfügt über Sat-TV. Die Wohnung ist für 3 + 2 Personen geeignet.
+                     Verfügt über einen gesicherten Parkplatz für das Fahrzeug. Innerhalb von 100 Metern gibt es Sand-
+                     und Felsstrände sowie viele verschiedene Einrichtungen. Es befindet sich nahe dem Stadtzentrum und
+                     verschiedenen Restaurants, Geschäften und Einkaufszentren...</p>
+               </div>
+            </div>
+            <div class="col s12 m6">
+               <div class="icon-block">
+                  <h2 class="center"><i class="material-icons"><a href="http://www.rab-visit.com/hr">info_outline</a></i></h2>
+                  <h5 class="center">Die Insel Rab</h5>
+                  <p class="light">Die Insel Rab liegt an der nördlichen Adria als Teil des Kvarner Archipels. Mit der
+                     Stadt Rab ist die Insel von 7 weitere Orte bewohnt: Lopar, Barbat, Banjol, Palit, Kampor,
+                     Mundanije und Supetarska Draga. Rab hat eine Bevölkerung von etwa 9.000 Einwohnern. Die Menschen
+                     arbeiten und organisierten Tourismus seit mehr als 125 Jahren...</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+         <div class="container">
+            <div class="row center">
+               <h5 class="header col s12 light">Sonnige Insel, die ein Lächeln auf Ihr Gesicht bringt</h5>
+            </div>
+         </div>
+      </div>
+      <div class="parallax"><img src="images/background2.jpg" alt="Rab 2"></div>
+   </div>
+
+   <div id="form" class="container">
+      <div class="section">
+         <form action="submit_de.php" method="post">
+            <div class="row">
+               <div class="col s12 m12">
+                  <div class="icon-block">
+                     <h2 class="center"><i class="material-icons"><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=ankica.kilic@gmail.com&tf=1">email</a></i></h2>
+                     <h5 class="center">Fragen und Reservierungen</h5>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s6">
+                        <input id="first_name" type="text" name="firstName" required>
+                        <label for="first_name">Vorname:</label>
+                     </div>
+                     <div class="input-field col s6">
+                        <input id="last_name" type="text" name="lastName" required>
+                        <label for="last_name">Nachname:</label>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s12">
+                        <input id="mail" type="email" name="mail" required>
+                        <label for="mail">E-mail:</label>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s6">
+                        <input id="datum_dolaska" type="text" name="dateArrival" class="datepicker">
+                        <label for="datum_dolaska">Datum der Ankunft</label>
+                     </div>
+                     <div class="input-field col s6">
+                        <input id="datum_odlaska" type="text" name="dateDeparture" class="datepicker">
+                        <label for="datum_odlaska">Abreisedatum</label>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s6">
+                        <select name="numberPeople">
+                           <option value="" disabled selected>Anzahl der Personen</option>
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                           <option value="6">6</option>
+                           <option value="7">7</option>
+                        </select>
+                     </div>
+                     <div class="input-field col s6">
+                        <select name="numberChildren">
+                           <option value="" disabled selected>Anzahl der Kinder</option>
+                           <option value="0">keine Kinder</option>
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                           <option value="6">6</option>
+                           <option value="7">7</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s12">
+                        <textarea id="textarea1" name="question" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Nachricht:</label>
+                     </div>
+                  </div>
+                  <div class="row" id="submit">
+                     <button class="btn-floating btn-large waves-effect waves-light blue" type="submit" name="submit"><i
+                           class="material-icons">email</i></button>
+                  </div>
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+
+   <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+         <div class="container">
+            <div class="row center">
+               <h5 class="header col s12 light">Wir hoffen, Sie zu sehen</h5>
+            </div>
+         </div>
+      </div>
+      <div class="parallax"><img src="images/background3.jpg" alt="Rab 3"></div>
+   </div>
+
+   <footer class="page-footer blue">
+      <div class="footer-copyright">
+         <div class="container">
+            <div id="copyright">
+               <p>Made with <span id="heart">❤️</span> by <a id="gmail_link" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=neksuses@gmail.com&tf=1">Josip</a></p>
+               <p id="grandma_marija"> Love
+                  you, grandma Marija.</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <p class="form-info-text hide-on-small-only">Kontaktieren Sie uns und reservieren Sie das Apartment</p>
+   <a id="form-button" href="#form" class="btn-floating btn-large blue pulse"><i class="material-icons">email</i></a>
+</body>
+
+</html>

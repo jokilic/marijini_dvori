@@ -1,0 +1,138 @@
+html {
+   scroll-behavior: smooth;
+}
+
+p {
+   line-height: 2em;
+}
+
+p.light {
+   font-size: 18px;
+}
+
+.zastava {
+   float: right;
+   margin-top: 10px;
+   margin-right: 25px;
+   max-width: 40px;
+   max-height: 40px;
+   transform: scale(1);
+   transition: transform 0.4s ease;
+}
+
+.zastava:hover {
+   transform: scale(1.35);
+   transition: transform 0.4s ease;
+}
+
+@media(max-width: 600px) {
+   .zastava:hover {
+      transform: scale(1.25);
+   }
+}
+
+@media(max-width: 360px) {
+   .zastava {
+      margin-right: 16px;
+   }
+}
+
+.zastava a img {
+   max-width: 100%;
+   height: auto;
+}
+
+.active-zastava {
+   transform: scale(1.25);
+}
+
+.parallax-container {
+   min-height: 380px;
+   height: auto;
+   color: rgba(255, 255, 255, 0.9);
+}
+
+@media(max-width: 400px) {
+   .header.center {
+      font-size: 50px;
+   }
+
+   .header {
+      font-size: 20px;
+   }
+}
+
+.parallax-container .section {
+   width: 100%;
+}
+
+.icon-block .material-icons {
+   font-size: inherit;
+}
+
+#submit {
+   text-align: center;
+}
+
+.page-footer .footer-copyright {
+   padding-bottom: 26px;
+}
+
+#copyright {
+   font-size: 85%;
+}
+
+#heart {
+   font-size: 22px;
+}
+
+#gmail_link {
+   font-weight: 700;
+   color: #bcaaa4;
+}
+
+#grandma_marija {
+   font-size: 10px;
+   line-height: 0;
+}
+
+#form-button {
+   position: fixed;
+   bottom: 36px;
+   right: 36px;
+}
+
+.form-info-text {
+   position: fixed;
+   bottom: 32px;
+   right: 106px;
+   padding: 6px 12px;
+   color: #2196F3;
+   background-color: #FFF;
+   font-weight: 500;
+   border-radius: 20px;
+}
+
+/****************** Slike.html ******************/
+
+#backBtn {
+   z-index: 9;
+   top: 30px;
+   left: 20px;
+}
+
+#backBtn i {
+   font-size: 32px;
+}
+
+.slider .indicators .indicator-item.active {
+   background-color: #2196F3;
+}
+
+@media(min-width: 768px) {
+   .slider .slides li img {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #212121;
+   }
+}
