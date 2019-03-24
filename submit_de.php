@@ -7,6 +7,7 @@
     <meta name="description"
         content="Neu eingerichtete Wohnung auf der Sonneninsel Rab. Sehen Sie sich die Fotos an, buchen Sie Ihren Aufenthalt und genießen Sie Ihren sonnigen Urlaub.">
     <title>Appartement Marija - Form einreichung</title>
+    <link rel="canonical" href="https://apartman-marija.000webhostapp.com/submit_de.php" />
     <link rel="shortcut icon" href="images/favicon.png">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />

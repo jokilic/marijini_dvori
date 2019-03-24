@@ -7,6 +7,7 @@
     <meta name="description"
         content="Newly decorated apartment on the sunny island of Rab. See the photos, book your stay and enjoy your sunny vacation.">
     <title>Apartment Marija - Form submission</title>
+    <link rel="canonical" href="https://apartman-marija.000webhostapp.com/submit_gb.php" />
     <link rel="shortcut icon" href="images/favicon.png">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
