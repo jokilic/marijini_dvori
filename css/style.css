@@ -26,43 +26,6 @@ h1 {
    text-decoration: underline;
 }
 
-input:focus,
-textarea:focus {
-   border-bottom: 1px solid #3f51b5 !important;
-   box-shadow: 0 1px 0 0 #3f51b5 !important;
-}
-
-input:focus+label,
-textarea:focus+label {
-   color: #3f51b5 !important;
-}
-
-button:focus {
-   background-color: #3f51b5;
-}
-
-.btn-large:hover {
-   background-color: #fff !important;
-   color: #3f51b5;
-}
-
-.btn-large i:hover {
-   color: #3f51b5;
-}
-
-.datepicker-day-button:focus {
-   background-color: #3f51b540;
-}
-
-.dropdown-content li>span {
-   color: #3f51b5;
-}
-
-.datepicker-cancel,
-.datepicker-done {
-   color: #3f51b5;
-}
-
 .zastava {
    float: right;
    margin-top: 10px;
@@ -123,15 +86,6 @@ button:focus {
    font-size: inherit;
 }
 
-.datepicker-date-display,
-.datepicker-table td.is-selected {
-   background-color: #3f51b5;
-}
-
-.datepicker-table td.is-today {
-   color: #3f51b5;
-}
-
 #submit {
    text-align: center;
 }
@@ -175,6 +129,56 @@ button:focus {
    border-radius: 20px;
 }
 
+/* Form - color changes */
+
+input:focus,
+textarea:focus {
+   border-bottom: 1px solid #3f51b5 !important;
+   box-shadow: 0 1px 0 0 #3f51b5 !important;
+}
+
+input:focus+label,
+textarea:focus+label {
+   color: #3f51b5 !important;
+}
+
+button:focus {
+   background-color: #3f51b5;
+}
+
+.btn-large:hover {
+   background-color: #fff !important;
+   color: #3f51b5;
+}
+
+.btn-large i:hover {
+   color: #3f51b5;
+}
+
+.datepicker-day-button:focus {
+   background-color: #3f51b540;
+}
+
+.dropdown-content li>span {
+   color: #3f51b5;
+}
+
+.datepicker-cancel,
+.datepicker-done {
+   color: #3f51b5;
+}
+
+.datepicker-date-display,
+.datepicker-table td.is-selected {
+   background-color: #3f51b5;
+}
+
+.datepicker-table td.is-today {
+   color: #3f51b5;
+}
+
+/* Google Map */
+
 .google-map {
    position: relative;
    height: 380px;
@@ -184,6 +188,10 @@ button:focus {
 .google-map iframe {
    height: 100%;
    width: 100%;
+}
+
+div.profile-photo-light {
+   display: none;
 }
 
 /****************** Slike.html ******************/
