@@ -50,7 +50,7 @@
                         <?= $firstName ?>! Brzo ćemo se javiti.</h5>
                 </div>
                 <div class="row center">
-                    <a href="index.html" class="btn-large waves-effect waves-light indigo">Idi
+                    <a href="index.html" title="back" class="btn-large waves-effect waves-light indigo">Idi
                         natrag</a>
                 </div>
             </div>

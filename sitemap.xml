@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://apartman-marija.000webhostapp.com/</loc>
+  <lastmod>2019-03-24T13:31:57+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://apartman-marija.000webhostapp.com/index_it.html</loc>
+  <lastmod>2019-03-24T13:31:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://apartman-marija.000webhostapp.com/index_de.html</loc>
+  <lastmod>2019-03-24T13:31:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://apartman-marija.000webhostapp.com/index_fr.html</loc>
+  <lastmod>2019-03-24T13:31:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://apartman-marija.000webhostapp.com/index_gb.html</loc>
+  <lastmod>2019-03-24T13:31:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://apartman-marija.000webhostapp.com/index.html</loc>
+  <lastmod>2019-03-24T13:31:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://apartman-marija.000webhostapp.com/slike.html</loc>
+  <lastmod>2019-03-24T13:31:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
