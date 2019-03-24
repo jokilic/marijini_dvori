@@ -8,7 +8,11 @@ $(function () {
         });
         $('.datepicker').datepicker({
             selectMonths: true,
-            selectYears: 15
+            selectYears: 15,
+            autoClose: true,
+            format: 'dd. mmmm yyyy.',
+            firstDay: 1,
+            minDate: new Date()
         });
     });
 });

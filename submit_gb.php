@@ -5,9 +5,10 @@
     <meta name="theme-color" content="#2196f3">
     <meta charset="utf-8">
     <title>Apartment Marija - Form submission</title>
-    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="shortcut icon" href="images/favicon.png">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>
@@ -40,17 +41,17 @@
     <div class="parallax-container">
         <div class="section no-pad-bot">
             <div class="container">
-                <h1 class="header center blue-text">Apartment Marija</h1>
+                <h1 class="header center indigo-text">Apartment Marija</h1>
                 <div class="row center">
                     <h5 class="header col s12 light">Mail sent. Thank you,
                         <?= $firstName ?>! We will contact you shortly.</h5>
                 </div>
                 <div class="row center">
-                    <a href="index.html" class="btn-large waves-effect waves-light blue">Go back</a>
+                    <a href="index_gb.html" class="btn-large waves-effect waves-light indigo">Go back</a>
                 </div>
             </div>
         </div>
-        <div class="parallax"><img src="images/background4.jpg" alt="Rab 4"></div>
+        <div class="parallax"><img src="images/background3-draw.jpg" alt="Rab 3"></div>
     </div>
 </body>
 

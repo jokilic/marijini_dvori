@@ -5,9 +5,10 @@
    <meta name="theme-color" content="#2196f3">
    <meta charset="utf-8">
    <title>Apartman Marija</title>
-   <link rel="shortcut icon" href="images/logo.png">
+   <link rel="shortcut icon" href="images/favicon.png">
    <link href="css/materialize.css" type="text/css" rel="stylesheet" />
    <link href="css/style.css" type="text/css" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <script src="js/jquery.js"></script>
    <script src="js/materialize.js"></script>
@@ -28,18 +29,18 @@
    <div class="parallax-container">
       <div class="section no-pad-bot">
          <div class="container">
-            <h1 class="header center blue-text">Apartman Marija</h1>
+            <h1 class="header center indigo-text">Apartman Marija</h1>
             <div class="row center">
                <h5 class="header col s12 light">Dobrodošli na stranice apartmana Marija</h5>
             </div>
             <div class="row center">
-               <a href="slike.html" class="btn-large waves-effect waves-light blue">Pogledajte
+               <a href="slike.html" class="btn-large waves-effect waves-light indigo">Pogledajte
                   slike</a>
             </div>
             <br><br>
          </div>
       </div>
-      <div class="parallax"><img src="images/background1.jpg" alt="Rab 1"></div>
+      <div class="parallax"><img src="images/background1-draw.jpg" alt="Rab 1"></div>
    </div>
 
    <div class="container">
@@ -47,23 +48,26 @@
          <div class="row">
             <div class="col s12 m6">
                <div class="icon-block">
-                  <h2 class="center"><i class="material-icons"><a href="https://www.google.hr/maps/place/%C5%A0oti%C4%87/@44.758935,14.7654303,17z/data=!3m1!4b1!4m2!3m1!1s0x4763af04e3d3d76d:0x926a22f84dfcf808">language</a></i></h2>
+                  <h2 class="center"><i class="material-icons"><a
+                           href="https://www.google.hr/maps/place/%C5%A0oti%C4%87/@44.758935,14.7654303,17z/data=!3m1!4b1!4m2!3m1!1s0x4763af04e3d3d76d:0x926a22f84dfcf808">language</a></i>
+                  </h2>
                   <h5 class="center">Gdje smo?</h5>
                   <p class="light">Apartman Marija se nalazi na otoku Rabu, na adresi Banjol 159. Moderno je uređen,
                      klimatiziran i ima TV sa satelitskim programima. Apartman je pogodan za 3 + 2 osobe. Ima osigurani
                      parking za vozilo. Unutar 100 metara se nalaze pješčane i kamenite plaže i mnogo raznih sadržaja.
-                     Blizina centra grada, trgovina i trgovačkih centara...
+                     Blizina centra grada, trgovina, trgovačkih centara i mnogih drugih sadržaja.
                   </p>
                </div>
             </div>
             <div class="col s12 m6">
                <div class="icon-block">
-                  <h2 class="center"><i class="material-icons"><a href="http://www.rab-visit.com/hr">info_outline</a></i></h2>
+                  <h2 class="center"><i class="material-icons"><a
+                           href="http://www.rab-visit.com/hr">info_outline</a></i></h2>
                   <h5 class="center">Otok Rab</h5>
                   <p class="light">Otok Rab smješten je na sjevernom dijelu Jadranskog mora kao dio Kvarnerskog
                      arhipelaga. Uz grad Rab, na otoku je još 7 mjesta: Lopar, Barbat, Banjol, Palit, Kampor, Mundanije
                      i Supetarska Draga. Na Rabu živi približno 9 000 stanovnika. Mještani se bave organiziranim
-                     turizmom već više od 125 godina…
+                     turizmom već više od 125 godina.
                   </p>
                </div>
             </div>
@@ -79,7 +83,7 @@
             </div>
          </div>
       </div>
-      <div class="parallax"><img src="images/background2.jpg" alt="Rab 2"></div>
+      <div class="parallax"><img src="images/background2-draw.jpg" alt="Rab 2"></div>
    </div>
 
    <div id="form" class="container">
@@ -88,7 +92,9 @@
             <div class="row">
                <div class="col s12 m12">
                   <div class="icon-block">
-                     <h2 class="center"><i class="material-icons"><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=ankica.kilic@gmail.com&tf=1">email</a></i></h2>
+                     <h2 class="center"><i class="material-icons"><a
+                              href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=ankica.kilic@gmail.com&tf=1">email</a></i>
+                     </h2>
                      <h5 class="center">Upiti i rezervacije</h5>
                   </div>
                   <div class="row">
@@ -151,8 +157,8 @@
                      </div>
                   </div>
                   <div class="row" id="submit">
-                     <button class="btn-floating btn-large waves-effect waves-light blue" type="submit" name="submit"><i
-                           class="material-icons">email</i></button>
+                     <button class="btn-floating btn-large waves-effect waves-light indigo" type="submit"
+                        name="submit"><i class="material-icons">email</i></button>
                   </div>
                </div>
             </div>
@@ -160,22 +166,18 @@
       </div>
    </div>
 
-   <div class="parallax-container valign-wrapper">
-      <div class="section no-pad-bot">
-         <div class="container">
-            <div class="row center">
-               <h5 class="header col s12 light">Bolje vam je da se pojavite...</h5>
-            </div>
-         </div>
-      </div>
-      <div class="parallax"><img src="images/background3.jpg" alt="Rab 3"></div>
+   <div class="google-map">
+      <iframe id="gmap_canvas"
+         src="https://maps.google.com/maps?q=Apartman%20Marija%2C%20Banjol%20159%20Rab&t=&z=15&ie=UTF8&iwloc=&output=embed"
+         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
    </div>
 
-   <footer class="page-footer blue">
+   <footer class="page-footer indigo">
       <div class="footer-copyright">
          <div class="container">
             <div id="copyright">
-               <p>Made with <span id="heart">❤️</span> by <a id="gmail_link" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=neksuses@gmail.com&tf=1">Josip</a></p>
+               <p>Made with <span id="heart">❤️</span> by <a id="gmail_link"
+                     href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=neksuses@gmail.com&tf=1">Josip</a></p>
                <p id="grandma_marija"> Volim te, baba Marija.</p>
             </div>
          </div>
@@ -183,7 +185,7 @@
    </footer>
 
    <p class="form-info-text hide-on-small-only">Javite nam se i rezervirajte apartman</p>
-   <a id="form-button" href="#form" class="btn-floating btn-large blue pulse"><i class="material-icons">email</i></a>
+   <a id="form-button" href="#form" class="btn-floating btn-large indigo pulse"><i class="material-icons">email</i></a>
 </body>
 
 </html>
