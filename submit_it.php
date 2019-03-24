@@ -46,8 +46,8 @@
             <div class="container">
                 <h1 class="header center indigo-text">Appartamento Marija</h1>
                 <div class="row center">
-                    <h5 class="header col s12 light">Posta inviata. Grazie,
-                        <?= $firstName ?>! Ti contatteremo a breve.</h5>
+                    <h2 class="header col s12 light">Posta inviata. Grazie,
+                        <?= $firstName ?>! Ti contatteremo a breve.</h2>
                 </div>
                 <div class="row center">
                     <a href="index_it.html" title="back" class="btn-large waves-effect waves-light indigo">Ritornare</a>

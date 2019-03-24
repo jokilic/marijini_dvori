@@ -46,8 +46,8 @@
             <div class="container">
                 <h1 class="header center indigo-text">Apartment Marija</h1>
                 <div class="row center">
-                    <h5 class="header col s12 light">Mail sent. Thank you,
-                        <?= $firstName ?>! We will contact you shortly.</h5>
+                    <h2 class="header col s12 light">Mail sent. Thank you,
+                        <?= $firstName ?>! We will contact you shortly.</h2>
                 </div>
                 <div class="row center">
                     <a href="index_gb.html" title="back" class="btn-large waves-effect waves-light indigo">Go back</a>
