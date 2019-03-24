@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="parallax"><img src="images/background3-draw.jpg" alt="Rab 3"></div>
+        <div class="parallax"><img src="images/background3-draw.jpg" alt="Rab 3" title="Rab 3"></div>
     </div>
 </body>
 
