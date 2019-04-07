@@ -12,6 +12,10 @@ a {
    font-weight: bold;
 }
 
+h1 {
+   text-decoration: underline;
+}
+
 h2 {
    font-size: 1.64rem;
    margin: 1.0933333333rem 0 .656rem 0;
@@ -29,8 +33,23 @@ a {
    color: #3f51b5;
 }
 
-h1 {
-   text-decoration: underline;
+label {
+   color: #000000de;
+}
+
+.amber {
+   background-color: #b5a33f !important;
+}
+
+.col.s12.m6 {
+   margin-bottom: 30px;
+}
+
+@media(max-width: 601px) {
+   .col.s12.m4.offset-m2 {
+      margin-bottom: 30px;
+   }
+
 }
 
 .zastava {
@@ -89,8 +108,16 @@ h1 {
    width: 100%;
 }
 
-.icon-block .material-icons {
-   font-size: inherit;
+.select-wrapper input.select-dropdown {
+   font-size: 1rem;
+}
+
+.input-field p {
+   margin: 0;
+}
+
+.photos-button {
+   text-align: center;
 }
 
 #submit {
@@ -99,6 +126,7 @@ h1 {
 
 .page-footer .footer-copyright {
    padding-bottom: 26px;
+   text-align: right;
 }
 
 #copyright {
@@ -119,42 +147,12 @@ h1 {
    line-height: 0;
 }
 
-/* Images Call-to-action */
-
-#images-button {
-   position: fixed;
-   bottom: 124px;
-   right: 16px;
+.apartman-josip i a {
+   color: #ad1457;
 }
 
-.images-info-text {
-   position: fixed;
-   bottom: 124px;
-   right: 86px;
-   padding: 6px 12px;
-   color: #3f51b5;
-   background-color: #fff;
-   font-weight: bold;
-   border-radius: 20px;
-}
-
-/* Form Call-to-action */
-
-#form-button {
-   position: fixed;
-   bottom: 36px;
-   right: 16px;
-}
-
-.form-info-text {
-   position: fixed;
-   bottom: 30px;
-   right: 86px;
-   padding: 6px 12px;
-   color: #3f51b5;
-   background-color: #fff;
-   font-weight: bold;
-   border-radius: 20px;
+.about-rab i a {
+   color: #b5a33f;
 }
 
 /* Form - color changes */
@@ -183,6 +181,10 @@ button:focus {
    color: #3f51b5;
 }
 
+.full .btn-large:hover {
+   color: #4CAF50;
+}
+
 .datepicker-day-button:focus {
    background-color: #3f51b540;
 }
@@ -205,15 +207,25 @@ button:focus {
    color: #3f51b5;
 }
 
+[type="radio"]:checked+span:after {
+   border: 2px solid #3f51b5;
+   background-color: #3f51b5;
+}
+
+.apartman-josip [type="radio"]:checked+span:after {
+   border: 2px solid #ad1457;
+   background-color: #ad1457;
+}
+
 /* Google Map */
 
-.google-map {
+#google-map {
    position: relative;
    height: 380px;
    width: auto;
 }
 
-.google-map iframe {
+#google-map iframe {
    height: 100%;
    width: 100%;
 }
@@ -234,6 +246,11 @@ div.profile-photo-light {
    font-size: 32px;
 }
 
+.apartman-josip #backBtn i,
+.apartman-josip .slider .indicators .indicator-item.active {
+   background-color: #ad1457;
+}
+
 .slider .indicators .indicator-item.active {
    background-color: #3f51b5;
 }
@@ -244,4 +261,8 @@ div.profile-photo-light {
       background-repeat: no-repeat;
       background-color: #212121;
    }
+}
+
+.parallax-container.full {
+   height: 100%;
 }

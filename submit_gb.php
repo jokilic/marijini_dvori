@@ -31,26 +31,25 @@
         $dateDeparture = $_POST['dateDeparture'];
         $numberPeople = $_POST['numberPeople'];
         $numberChildren = $_POST['numberChildren'];
+        $apartmentRadio = $_POST['apartmentRadio'];
         $question = $_POST['question'];
         $subject = "Form submission - GB";
-        $message = "E-mail adresa: " . $from . "\n\n" . "Ime: " . $firstName . " " . $lastName . "\n\n" . "Datum dolaska: " .  $dateArrival . "\n" . "Datum odlaska: " . $dateDeparture . "\n\n" . "Broj osoba: " . $numberPeople . "\n" . "Broj djece: " . $numberChildren . "\n\n" . "Poruka: " . $question . "\n\n";
-        $headers = "From:" . $from;
+        $message = "E-mail adresa: " . $from . "\n\n" . "Ime: " . $firstName . " " . $lastName . "\n\n" . "Datum dolaska: " .  $dateArrival . "\n" . "Datum odlaska: " . $dateDeparture . "\n\n" . "Broj osoba: " . $numberPeople . "\n" . "Broj djece: " . $numberChildren . "\n\n" . "Željeni apartman: " . $apartmentRadio . "\n\n" . "Poruka: " . $question . "\n\n";
+        $headers = "From: " . $from;
 
         mail($to, $subject, $message, $headers);
     }
     ?>
-    <nav class="white">
-    </nav>
-    <div class="parallax-container">
+    <div class="parallax-container full">
         <div class="section no-pad-bot">
             <div class="container">
-                <h1 class="header center indigo-text">Apartment Marija</h1>
+                <h1 class="header center green-text">Apartment Marija</h1>
                 <div class="row center">
                     <h2 class="header col s12 light">Mail sent. Thank you,
                         <?= $firstName ?>! We will contact you shortly.</h2>
                 </div>
                 <div class="row center">
-                    <a href="index_gb.html" title="back" class="btn-large waves-effect waves-light indigo">Go back</a>
+                    <a href="index_gb.html" title="back" class="btn-large waves-effect waves-light green">Go back</a>
                 </div>
             </div>
         </div>
