@@ -49,7 +49,7 @@
                         <?= $firstName ?>! Ti contatteremo a breve.</h2>
                 </div>
                 <div class="row center">
-                    <a href="index_it.html" title="back" class="btn-large waves-effect waves-light green">Ritornare</a>
+                    <a href="it.html" title="back" class="btn-large waves-effect waves-light green">Ritornare</a>
                 </div>
             </div>
         </div>
