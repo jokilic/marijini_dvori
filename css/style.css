@@ -266,3 +266,13 @@ div.profile-photo-light {
 .parallax-container.full {
    height: 100%;
 }
+
+/****************** Cijene.html ******************/
+
+tr td:first-child {
+   font-weight: bold;
+}
+
+span {
+   font-weight: normal;
+}
