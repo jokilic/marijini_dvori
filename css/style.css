@@ -267,6 +267,15 @@ div.profile-photo-light {
    height: 100%;
 }
 
+.slider .slides li .caption {
+   top: 4%;
+}
+
+.slider .slides li .caption h3 {
+   font-size: 4rem;
+   text-decoration: underline;
+}
+
 /****************** Cijene.html ******************/
 
 tr td:first-child {
