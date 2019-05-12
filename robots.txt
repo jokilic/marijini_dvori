@@ -2,4 +2,4 @@ User-agent: *
 Disallow: 
 
 ## Sitemap URL
-Sitemap: http://apartman-marija.000webhostapp.com/sitemap.xml
+Sitemap: http://www.apartman-marija.ga/sitemap.xml

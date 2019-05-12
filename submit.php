@@ -1,12 +1,26 @@
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-139929872-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-139929872-1');
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#3f51b5">
     <meta charset="utf-8">
     <meta name="description"
         content="Pogledajte novouređeni apartman na otoku Rabu. Rezervirajte vaš dolazak. Vidimo se!">
     <title>Apartman Marija - Form submission</title>
-    <link rel="canonical" href="https://apartman-marija.000webhostapp.com/submit.php" />
+    <link rel="canonical" href="http://www.apartman-marija.ga" />
     <link rel="shortcut icon" href="images/favicon.png">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
