@@ -2,26 +2,22 @@
 <html>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-139929872-1"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139929872-2"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-139929872-1');
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'UA-139929872-2');
     </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#3f51b5">
     <meta charset="utf-8">
     <meta name="description"
-        content="Neu eingerichtete Wohnung auf der Sonneninsel Rab. Sehen Sie sich die Fotos an, buchen Sie Ihren Aufenthalt und genießen Sie Ihren sonnigen Urlaub.">
-    <title>Appartement Marija - Form einreichung</title>
-    <link rel="canonical" href="http://www.apartman-marija.ga" />
+        content="Neu eingerichtete Appartements auf der Sonneninsel Rab. Sehen Sie sich die Fotos an, buchen Sie Ihren Aufenthalt und genießen Sie Ihren sonnigen Urlaub.">
+    <title>Marijini dvori | Form einreichung</title>
+    <link rel="canonical" href="http://www.marijini-dvori.tk" />
     <link rel="shortcut icon" href="images/favicon.png">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
@@ -56,7 +52,7 @@ if (isset($_POST['submit'])) {
     <div class="parallax-container full">
         <div class="section no-pad-bot">
             <div class="container">
-                <h1 class="header center green-text">Appartement Marija</h1>
+                <h1 class="header center green-text">Marijini dvori</h1>
                 <div class="row center">
                     <h2 class="header col s12 light">Mail gesendet. Danke,
                         <?=$firstName?>! Wir werden Sie in Kürze kontaktieren.</h2>

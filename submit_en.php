@@ -1,26 +1,22 @@
 <html>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-139929872-1"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139929872-2"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-139929872-1');
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'UA-139929872-2');
     </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#3f51b5">
     <meta charset="utf-8">
     <meta name="description"
-        content="Newly decorated apartment on the sunny island of Rab. See the photos, book your stay and enjoy your sunny vacation.">
-    <title>Apartment Marija - Form submission</title>
-    <link rel="canonical" href="http://www.apartman-marija.ga" />
+        content="Newly decorated apartments on the sunny island of Rab. See the photos, book your stay and enjoy your sunny vacation.">
+    <title>Marijini dvori | Form submission</title>
+    <link rel="canonical" href="http://www.marijini-dvori.tk" />
     <link rel="shortcut icon" href="images/favicon.png">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
@@ -45,7 +41,7 @@ if (isset($_POST['submit'])) {
     $numberChildren = $_POST['numberChildren'];
     $apartmentRadio = $_POST['apartmentRadio'];
     $question = $_POST['question'];
-    $subject = "Form submission - GB";
+    $subject = "Form submission - EN";
     $message = "E-mail adresa: " . $from . "\n\n" . "Ime: " . $firstName . " " . $lastName . "\n\n" . "Datum dolaska: " . $dateArrival . "\n" . "Datum odlaska: " . $dateDeparture . "\n\n" . "Broj osoba: " . $numberPeople . "\n" . "Broj djece: " . $numberChildren . "\n\n" . "Željeni apartman: " . $apartmentRadio . "\n\n" . "Poruka: " . $question . "\n\n";
     $headers = "From: " . $from;
 
@@ -55,13 +51,13 @@ if (isset($_POST['submit'])) {
     <div class="parallax-container full">
         <div class="section no-pad-bot">
             <div class="container">
-                <h1 class="header center green-text">Apartment Marija</h1>
+                <h1 class="header center green-text">Marijini dvori</h1>
                 <div class="row center">
                     <h2 class="header col s12 light">Mail sent. Thank you,
                         <?=$firstName?>! We will contact you shortly.</h2>
                 </div>
                 <div class="row center">
-                    <a href="gb.html" title="back" class="btn-large waves-effect waves-light green">Go back</a>
+                    <a href="en.html" title="back" class="btn-large waves-effect waves-light green">Go back</a>
                 </div>
             </div>
         </div>

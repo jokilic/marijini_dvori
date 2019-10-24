@@ -55,6 +55,18 @@ label {
   }
 }
 
+#dubravka {
+  position: fixed;
+  max-width: 84px;
+  top: 8px;
+  left: 10px;
+  z-index: 9;
+}
+
+.zastave {
+  float: right;
+}
+
 .zastava {
   float: right;
   margin-top: 10px;
@@ -76,9 +88,17 @@ label {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .zastava {
     margin-right: 16px;
+    max-width: 36px;
+    max-height: 36px;
+  }
+}
+
+@media (max-width: 385px) {
+  .dubravka {
+    display: none;
   }
 }
 

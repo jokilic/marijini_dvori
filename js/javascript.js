@@ -26,6 +26,23 @@ $(function() {
   });
 });
 
+function random_dubravka() {
+  $('#dubravka').animate({
+    left: '60px'
+  });
+}
+
+function random_dubravka_back() {
+  $('#dubravka').animate({
+    left: '10px'
+  });
+}
+
+var delay = Math.floor(Math.random() * 2500) + 5000;
+
+setInterval(random_dubravka, delay);
+setInterval(random_dubravka_back, delay);
+
 function slijedeca_slika() {
   $('.slider').slider('next');
 }

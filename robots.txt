@@ -2,4 +2,4 @@ User-agent: *
 Disallow: 
 
 ## Sitemap URL
-Sitemap: http://www.apartman-marija.ga/sitemap.xml
+Sitemap: http://www.marijini-dvori.tk/sitemap.xml
