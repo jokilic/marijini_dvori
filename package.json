@@ -1,0 +1,29 @@
+{
+  "name": "apartmanmarija",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "concat:css": "concat -o css/style.concat.css css/materialize.css css/style.css",
+    "prefix:css": "postcss --use autoprefixer -b \" last 10 versions\" css/style.concat.css -o css/style.prefix.css",
+    "concat:js": "concat -o js/script.concat.js js/jquery.js js/javascript.js js/materialize.js",
+    "build:css": "npm-run-all concat:css prefix:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokilic/ApartmanMarija.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jokilic/ApartmanMarija/issues"
+  },
+  "homepage": "https://github.com/jokilic/ApartmanMarija#readme",
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0",
+    "purify-css": "^1.2.5"
+  }
+}
