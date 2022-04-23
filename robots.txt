@@ -1,0 +1,5 @@
+User-agent: * 
+Disallow: 
+
+## Sitemap URL
+Sitemap: http://www.marijini-dvori.tk/sitemap.xml
