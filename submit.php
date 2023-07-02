@@ -42,10 +42,11 @@
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->SMTPSecure = 'tls';
-        $mail->Port = 587;
-        $mail->Username = 'your-email@gmail.com';
-        $mail->Password = 'your-email-password';
+        $mail->Host = 'smtp.gmail.com';
+        $mail->Username = 'neksuses@gmail.com';
+        $mail->Password = 'whajhnxqkbgmcuew' ;
+        $mail->Port = 465;
+        $mail->SMTPSecure = "ssl";
 
         // Sender and recipient
         $from = $_POST['mail'];
