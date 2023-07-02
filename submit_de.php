@@ -94,6 +94,7 @@
     <?php
         } catch (Exception $e) {
             // Display error message
+            ?>
             <div class="parallax-container full">
         <div class="section no-pad-bot">
             <div class="container">
@@ -111,6 +112,7 @@
         </div>
         <div class="parallax"><img src="images/background3-draw.jpg" alt="Rab 3" title="Rab 3"></div>
     </div>
+    <?php
         }
     }
     ?>

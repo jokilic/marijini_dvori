@@ -56,7 +56,7 @@
         $to = "neksuses@gmail.com";
 
         // Email content
-        $subject = "Form submission - HR";
+        $subject = "Form submission - FR";
         $message = "E-mail adresa: " . $from . "\n\n" . "Ime: " . $firstName . " " . $lastName . "\n\n" . "Datum dolaska: " . $_POST['dateArrival'] . "\n" . "Datum odlaska: " . $_POST['dateDeparture'] . "\n\n" . "Broj osoba: " . $_POST['numberPeople'] . "\n" . "Broj djece: " . $_POST['numberChildren'] . "\n\n" . "Željeni apartman: " . $_POST['apartmentRadio'] . "\n\n" . "Poruka: " . $_POST['question'] . "\n\n";
         
         try {
@@ -93,6 +93,7 @@
     <?php
         } catch (Exception $e) {
               // Display error message
+              ?>
               <div class="parallax-container full">
               <div class="section no-pad-bot">
                   <div class="container">
@@ -110,6 +111,8 @@
               </div>
               <div class="parallax"><img src="images/background3-draw.jpg" alt="Rab 3" title="Rab 3"></div>
           </div>
+
+          <?php
         }
     }
     ?>
