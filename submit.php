@@ -1,10 +1,11 @@
 <html>
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139929872-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-139929872-2');
@@ -14,7 +15,7 @@
     <meta name="theme-color" content="#3f51b5">
     <meta charset="utf-8">
     <meta name="description"
-          content="Novouređeni apartmani na otoku Rabu. Pogledajte slike, rezervirajte vaš dolazak i uživajte u sunčanom odmoru.">
+        content="Novouređeni apartmani na otoku Rabu. Pogledajte slike, rezervirajte vaš dolazak i uživajte u sunčanom odmoru.">
     <title>Marijini dvori | Form submission</title>
     <link rel="canonical" href="https://www.marijini-dvori.ga" />
     <link rel="shortcut icon" href="images/favicon.png">
@@ -73,26 +74,45 @@
             // Display success message
             ?>
 
-            <div class="parallax-container full">
-                <div class="section no-pad-bot">
-                    <div class="container">
-                        <h1 class="header center green-text">Marijini dvori</h1>
-                        <div class="row center">
-                            <h2 class="header col s12 light">Upit poslan. Hvala ti, <?=$firstName?>! Brzo ćemo se javiti.</h2>
-                        </div>
-                        <div class="row center">
-                            <a href="/" title="back" class="btn-large waves-effect waves-light green">Idi natrag</a>
-                        </div>
-                    </div>
+    <div class="parallax-container full">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <h1 class="header center green-text">Marijini dvori</h1>
+                <div class="row center">
+                    <h2 class="header col s12 light">Upit poslan. Hvala ti,
+                        <?=$firstName?>! Brzo ćemo se javiti.
+                    </h2>
                 </div>
-                <div class="parallax"><img src="images/background3-draw.jpg" alt="Rab 3" title="Rab 3"></div>
+                <div class="row center">
+                    <a href="/" title="back" class="btn-large waves-effect waves-light green">Idi natrag</a>
+                </div>
             </div>
-        <?php
+        </div>
+        <div class="parallax"><img src="images/background3-draw.jpg" alt="Rab 3" title="Rab 3"></div>
+    </div>
+    <?php
         } catch (Exception $e) {
-            // Display error message
-            echo "Email could not be sent. Error: {$mail->ErrorInfo}";
+              // Display error message
+              <div class="parallax-container full">
+              <div class="section no-pad-bot">
+                  <div class="container">
+                      <h1 class="header center green-text">Marijini dvori</h1>
+                      <div class="row center">
+                          <h2 class="header col s12 light">Upit nije poslan. Javite se na <a href="mailto:neksuses@gmail.com">direktno na mail</a>.
+                          </h2>
+                          <h4 class="header col s12 light">Catch error: $e</h4>
+                          <h4 class="header col s12 light">Mail error: {$mail->ErrorInfo}</h4>
+                      </div>
+                      <div class="row center">
+                          <a href="de.html" title="back" class="btn-large waves-effect waves-light red">Idi natrag</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="parallax"><img src="images/background3-draw.jpg" alt="Rab 3" title="Rab 3"></div>
+          </div>
         }
     }
     ?>
 </body>
+
 </html>

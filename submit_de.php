@@ -1,14 +1,14 @@
-
 <html>
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139929872-2"></script>
     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-     gtag('config', 'UA-139929872-2');
+        gtag('config', 'UA-139929872-2');
     </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,33 +26,63 @@
 </head>
 
 <body>
-    <?php
-error_reporting(0);
-if (isset($_POST['submit'])) {
-    $to = "neksuses@gmail.com";
-    $from = $_POST['mail'];
-    $firstName = $_POST['firstName'];
-    $lastName = $_POST['lastName'];
-    $dateArrival = $_POST['dateArrival'];
-    $dateDeparture = $_POST['dateDeparture'];
-    $numberPeople = $_POST['numberPeople'];
-    $numberChildren = $_POST['numberChildren'];
-    $apartmentRadio = $_POST['apartmentRadio'];
-    $question = $_POST['question'];
-    $subject = "Form submission - DE";
-    $message = "E-mail adresa: " . $from . "\n\n" . "Ime: " . $firstName . " " . $lastName . "\n\n" . "Datum dolaska: " . $dateArrival . "\n" . "Datum odlaska: " . $dateDeparture . "\n\n" . "Broj osoba: " . $numberPeople . "\n" . "Broj djece: " . $numberChildren . "\n\n" . "Željeni apartman: " . $apartmentRadio . "\n\n" . "Poruka: " . $question . "\n\n";
-    $headers = "From: " . $from;
 
-    mail($to, $subject, $message, $headers);
-}
-?>
+    <?php
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'PHPMailer/src/PHPMailer.php';
+    require 'PHPMailer/src/SMTP.php';
+    require 'PHPMailer/src/Exception.php';
+
+    error_reporting(0);
+
+    if (isset($_POST['submit'])) {
+        $mail = new PHPMailer(true);
+
+        // Configure SMTP settings for Gmail
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Host = 'smtp.gmail.com';
+        $mail->Username = 'neksuses@gmail.com';
+        $mail->Password = 'whajhnxqkbgmcuew' ;
+        $mail->Port = 465;
+        $mail->SMTPSecure = "ssl";
+
+        // Sender and recipient
+        $from = $_POST['mail'];
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
+        $to = "neksuses@gmail.com";
+
+        // Email content
+        $subject = "Form submission - DE";
+        $message = "E-mail adresa: " . $from . "\n\n" . "Ime: " . $firstName . " " . $lastName . "\n\n" . "Datum dolaska: " . $_POST['dateArrival'] . "\n" . "Datum odlaska: " . $_POST['dateDeparture'] . "\n\n" . "Broj osoba: " . $_POST['numberPeople'] . "\n" . "Broj djece: " . $_POST['numberChildren'] . "\n\n" . "Željeni apartman: " . $_POST['apartmentRadio'] . "\n\n" . "Poruka: " . $_POST['question'] . "\n\n";
+        
+        try {
+            // Set the sender and recipient
+            $mail->setFrom($from, $firstName . ' ' . $lastName);
+            $mail->addAddress($to);
+
+            // Set the email subject and body
+            $mail->Subject = $subject;
+            $mail->Body = $message;
+
+            // Send the email
+            $mail->send();
+
+            // Display success message
+            ?>
+
     <div class="parallax-container full">
         <div class="section no-pad-bot">
             <div class="container">
                 <h1 class="header center green-text">Marijini dvori</h1>
                 <div class="row center">
                     <h2 class="header col s12 light">Mail gesendet. Danke,
-                        <?=$firstName?>! Wir werden Sie in Kürze kontaktieren.</h2>
+                        <?=$firstName?>! Wir werden Sie in Kürze kontaktieren.
+                    </h2>
                 </div>
                 <div class="row center">
                     <a href="de.html" title="back" class="btn-large waves-effect waves-light green">Zurück</a>
@@ -61,5 +91,29 @@ if (isset($_POST['submit'])) {
         </div>
         <div class="parallax"><img src="images/background3-draw.jpg" alt="Rab 3" title="Rab 3"></div>
     </div>
+    <?php
+        } catch (Exception $e) {
+            // Display error message
+            <div class="parallax-container full">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <h1 class="header center green-text">Marijini dvori</h1>
+                <div class="row center">
+                    <h2 class="header col s12 light">E-Mail konnte nicht gesendet werden. Kontaktieren Sie uns <a href="mailto:neksuses@gmail.com">direkt per E-Mail</a>.
+                    </h2>
+                    <h4 class="header col s12 light">Catch error: $e</h4>
+                    <h4 class="header col s12 light">Mail error: {$mail->ErrorInfo}</h4>
+                </div>
+                <div class="row center">
+                    <a href="de.html" title="back" class="btn-large waves-effect waves-light red">Zurück</a>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="images/background3-draw.jpg" alt="Rab 3" title="Rab 3"></div>
+    </div>
+        }
+    }
+    ?>
 </body>
+
 </html>
