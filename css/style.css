@@ -8837,6 +8837,10 @@ label {
 	}
 }
 
+.photo-buttons a {
+	margin: 15px 15px 0;
+}
+
 #dubravka {
 	position: fixed;
 	max-width: 84px;
