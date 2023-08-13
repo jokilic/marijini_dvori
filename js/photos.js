@@ -22,19 +22,47 @@ function isMobileViewport() {
 }
 
 // Get link elements
-const dvoristeLinkElement = document.getElementById("linkSlike");
-const marijaLinkElement = document.getElementById("linkSlikeMarija");
-const josipLinkElement = document.getElementById("linkSlikeJosip");
+const buttonMarija = document.getElementById("buttonMarija");
+const buttonJosip = document.getElementById("buttonJosip");
+const buttonDvoriste = document.getElementById("buttonDvoriste");
+
+const iconMarija = document.getElementById("iconMarija");
+const photosMarija = document.getElementById("photosMarija");
+const textButtonMarija = document.getElementById("textButtonMarija");
+
+const iconJosip = document.getElementById("iconJosip");
+const photosJosip = document.getElementById("photosJosip");
+const textButtonJosip = document.getElementById("textButtonJosip");
+
+const photosDvoriste = document.getElementById("photosDvoriste");
 
 // Check if the viewport width corresponds to a mobile device
 if (isMobileViewport()) {
     // Set the link's destination for portrait gallery
-    dvoristeLinkElement.href = apartmanDvoristePortrait;
-    marijaLinkElement.href = apartmanMarijaPortrait;
-    josipLinkElement.href = apartmanJosipPortrait;
+    buttonDvoriste.href = apartmanDvoristePortrait;
+    photosDvoriste.href = apartmanDvoristePortrait;
+
+    buttonMarija.href = apartmanMarijaPortrait;
+    iconMarija.href = apartmanMarijaPortrait;
+    photosMarija.href = apartmanMarijaPortrait;
+    textButtonMarija.href = apartmanMarijaPortrait;
+
+    buttonJosip.href = apartmanJosipPortrait;
+    iconJosip.href = apartmanJosipPortrait;
+    photosJosip.href = apartmanJosipPortrait;
+    textButtonJosip.href = apartmanJosipPortrait;
 } else {
     // Set the link's destination for landscape gallery
-    dvoristeLinkElement.href = apartmanDvoristeLandscape;
-    marijaLinkElement.href = apartmanMarijaLandscape;
-    josipLinkElement.href = apartmanJosipLandscape;
+    buttonDvoriste.href = apartmanDvoristeLandscape;
+    photosDvoriste.href = apartmanDvoristeLandscape;
+
+    buttonMarija.href = apartmanMarijaLandscape;
+    iconMarija.href = apartmanMarijaLandscape;
+    photosMarija.href = apartmanMarijaLandscape;
+    textButtonMarija.href = apartmanMarijaLandscape;
+
+    buttonJosip.href = apartmanJosipLandscape;
+    iconJosip.href = apartmanJosipLandscape;
+    photosJosip.href = apartmanJosipLandscape;
+    textButtonJosip.href = apartmanJosipLandscape;
 }
