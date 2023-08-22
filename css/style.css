@@ -8993,7 +8993,7 @@ label {
 }
 
 .icons .material-icons.city {
-	color: #43a047;
+	color: #37474f;
 }
 
 #submit {
@@ -9027,9 +9027,34 @@ label {
 	color: #ad1457;
 }
 
-.about-rab i a {
+.beach i a {
 	color: #b5a33f;
 }
+
+.info i a {
+	color: #29b6f6;
+}
+
+.dvoriste i a {
+	color: #4caf50;
+}
+
+.about-rab i a {
+	color: #29b6f6;
+}
+
+.waves-light.btn.beach {
+	background-color: #b5a33f;
+}
+
+.waves-light.btn.dvoriste {
+	background-color: #4caf50;
+}
+
+.waves-light.btn-small.about-rab {
+	background-color: #29b6f6;
+}
+
 
 #form-button {
 	position: fixed;
