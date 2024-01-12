@@ -43,7 +43,7 @@
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Host = 'smtp.gmail.com';
-        $mail->Username = 'neksuses@gmail.com';
+        $mail->Username = 'martinkilic0812@gmail.com';
         $mail->Password = 'whajhnxqkbgmcuew' ;
         $mail->Port = 465;
         $mail->SMTPSecure = "ssl";
@@ -52,7 +52,7 @@
         $from = $_POST['mail'];
         $firstName = $_POST['firstName'];
         $lastName = $_POST['lastName'];
-        $to = "neksuses@gmail.com";
+        $to = "martinkilic0812@gmail.com";
 
         // Email content
         $subject = "Form submission - HR";
@@ -91,12 +91,12 @@
         } catch (Exception $e) {
             // Display error message
              ?>
-              <div class="parallax-container full">
+                <div class="parallax-container full">
                 <div class="section no-pad-bot">
                     <div class="container">
                         <h1 class="header center green-text">Marijini dvori</h1>
                         <div class="row center">
-                            <h2 class="header col s12 light">Upit nije poslan. Javite nam se direktno na <a href="mailto:neksuses@gmail.com">neksuses@gmail.com</a>.</h2>
+                            <h2 class="header col s12 light">Upit nije poslan. Javite nam se direktno na <a href="mailto:martinkilic0812@gmail.com">martinkilic0812@gmail.com</a>.</h2>
                         </div>
                         <div class="row center">
                             <a href="/" title="back" class="btn-large waves-effect waves-light red">Idi natrag</a>

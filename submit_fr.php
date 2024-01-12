@@ -44,7 +44,7 @@
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Host = 'smtp.gmail.com';
-        $mail->Username = 'neksuses@gmail.com';
+        $mail->Username = 'martinkilic0812@gmail.com';
         $mail->Password = 'whajhnxqkbgmcuew' ;
         $mail->Port = 465;
         $mail->SMTPSecure = "ssl";
@@ -53,7 +53,7 @@
         $from = $_POST['mail'];
         $firstName = $_POST['firstName'];
         $lastName = $_POST['lastName'];
-        $to = "neksuses@gmail.com";
+        $to = "martinkilic0812@gmail.com";
 
         // Email content
         $subject = "Form submission - FR";
@@ -99,7 +99,7 @@
                   <div class="container">
                       <h1 class="header center green-text">Marijini dvori</h1>
                       <div class="row center">
-                          <h2 class="header col s12 light">Échec de l'envoi du courrier. Contactez-nous <a href="mailto:neksuses@gmail.com">directement par e-mail</a>.
+                          <h2 class="header col s12 light">Échec de l'envoi du courrier. Contactez-nous <a href="mailto:martinkilic0812@gmail.com">directement par e-mail</a>.
                           </h2>
                           <h4 class="header col s12 light">Catch error: $e</h4>
                           <h4 class="header col s12 light">Mail error: {$mail->ErrorInfo}</h4>
