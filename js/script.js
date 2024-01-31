@@ -1,15 +1,3 @@
-function random_dubravka() {
-	$('#dubravka').animate({ left: '60px' });
-}
-function random_dubravka_back() {
-	$('#dubravka').animate({ left: '10px' });
-}
-function random_seicento() {
-	$('#seicento').animate({ left: '60px' });
-}
-function random_seicento_back() {
-	$('#seicento').animate({ left: '10px' });
-}
 function sljedeca_slika() {
 	$('.slider').slider('next');
 }
@@ -5410,7 +5398,6 @@ function _classCallCheck(e, t) {
 		});
 	});
 var delay = Math.floor(2500 * Math.random()) + 5e3;
-setInterval(random_seicento, delay), setInterval(random_seicento_back, delay);
 var _get = function e(t, n, i) {
 	null === t && (t = Function.prototype);
 	var o = Object.getOwnPropertyDescriptor(t, n);

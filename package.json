@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "concat:css": "concat -o css/style.concat.css css/materialize.css css/style.css",
+    "concat:css": "concat -o css/style.concat.css css/style.css",
     "prefix:css": "postcss --use autoprefixer -b \" last 10 versions\" css/style.concat.css -o css/style.prefix.css",
-    "concat:js": "concat -o js/script.concat.js js/jquery.js js/javascript.js js/materialize.js",
+    "concat:js": "concat -o js/script.concat.js js/jquery.js js/javascript.js",
     "build:css": "npm-run-all concat:css prefix:css"
   },
   "repository": {
