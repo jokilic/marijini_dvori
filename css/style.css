@@ -9001,6 +9001,10 @@ label {
 	color: #ad1457;
 }
 
+.apartman-all i a {
+	color: #b5a33f;
+}
+
 .beach i a {
 	color: #b5a33f;
 }
@@ -9109,6 +9113,11 @@ button:focus {
 	background-color: #ad1457;
 }
 
+.apartman-all [type='radio']:checked+span:after {
+	border: 2px solid #b5a33f;
+	background-color: #b5a33f;
+}
+
 #google-map {
 	position: relative;
 	height: 380px;
@@ -9142,6 +9151,16 @@ div.profile-photo-light {
 .apartman-josip #backBtn i:hover {
 	background-color: #fff;
 	color: #ad1457;
+}
+
+.apartman-all #backBtn i,
+.apartman-all .slider .indicators .indicator-item.active {
+	background-color: #b5a33f;
+}
+
+.apartman-all #backBtn i:hover {
+	background-color: #fff;
+	color: #b5a33f;
 }
 
 .slider .indicators .indicator-item.active {
