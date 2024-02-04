@@ -17,7 +17,7 @@
     <meta name="description"
         content="Neu eingerichtete Appartements auf der Sonneninsel Rab. Sehen Sie sich die Fotos an, buchen Sie Ihren Aufenthalt und genießen Sie Ihren sonnigen Urlaub.">
     <title>Marijini dvori | Form einreichung</title>
-    <link rel="canonical" href="https://www.marijini-dvori.ga" />
+    <link rel="canonical" href="https://www.marijini-dvori.com" />
     <link rel="shortcut icon" href="images/favicon.png">
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">

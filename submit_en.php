@@ -17,7 +17,7 @@
     <meta name="description"
         content="Newly decorated apartments on the sunny island of Rab. See the photos, book your stay and enjoy your sunny vacation.">
     <title>Marijini dvori | Form submission</title>
-    <link rel="canonical" href="https://www.marijini-dvori.ga" />
+    <link rel="canonical" href="https://www.marijini-dvori.com" />
     <link rel="shortcut icon" href="images/favicon.png">
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">

@@ -17,7 +17,7 @@
     <meta name="description"
         content="Appartamenti recentemente decorati sulla soleggiata isola di Rab. Guarda le foto, prenota il tuo soggiorno e goditi la tua vacanza al sole.">
     <title>Marijini dvori | Form richiesta</title>
-    <link rel="canonical" href="https://www.marijini-dvori.ga" />
+    <link rel="canonical" href="https://www.marijini-dvori.com" />
     <link rel="shortcut icon" href="images/favicon.png">
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">

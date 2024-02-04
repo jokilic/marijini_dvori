@@ -15,9 +15,9 @@
     <meta name="theme-color" content="#3f51b5">
     <meta charset="utf-8">
     <meta name="description"
-        content="Appartements récemment décorés sur l'île ensoleillée de Rab. Regardez les photos, réservez votre séjour et profitez de vos vacances ensoleillées.">
-    <title>Marijini dvori | Form soumission</title>
-    <link rel="canonical" href="https://www.marijini-dvori.ga" />
+        content="Nowo urządzone apartamenty na słonecznej wyspie Rab. Obejrzyj zdjęcia, zarezerwuj pobyt i ciesz się słonecznymi wakacjami.">
+    <title>Marijini dvori | Przesyłanie formularza</title>
+    <link rel="canonical" href="https://www.marijini-dvori.com" />
     <link rel="shortcut icon" href="images/favicon.png">
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -56,7 +56,7 @@
         $to = "martinkilic0812@gmail.com";
 
         // Email content
-        $subject = "Form submission - FR";
+        $subject = "Form submission - PL";
         $message = "E-mail adresa: " . $from . "\n\n" . "Ime: " . $firstName . " " . $lastName . "\n\n" . "Datum dolaska: " . $_POST['dateArrival'] . "\n" . "Datum odlaska: " . $_POST['dateDeparture'] . "\n\n" . "Broj osoba: " . $_POST['numberPeople'] . "\n" . "Broj djece: " . $_POST['numberChildren'] . "\n\n" . "Željeni apartman: " . $_POST['apartmentRadio'] . "\n\n" . "Poruka: " . $_POST['question'] . "\n\n";
         
         try {
@@ -79,12 +79,12 @@
             <div class="container">
                 <h1 class="header center green-text">Marijini dvori</h1>
                 <div class="row center">
-                    <h2 class="header col s12 light">Email envoyé. Merci,
-                        <?=$firstName?>! Nous vous contacterons sous peu.
+                    <h2 class="header col s12 light">Mail wysłany. Dziękuję,
+                        <?=$firstName?>! Skontaktujemy się z Tobą wkrótce.
                     </h2>
                 </div>
                 <div class="row center">
-                    <a href="fr.html" title="back" class="btn-large waves-effect waves-light green">Retourner</a>
+                    <a href="pl.html" title="back" class="btn-large waves-effect waves-light green">Wróć</a>
                 </div>
             </div>
         </div>
@@ -99,13 +99,13 @@
                   <div class="container">
                       <h1 class="header center green-text">Marijini dvori</h1>
                       <div class="row center">
-                          <h2 class="header col s12 light">Échec de l'envoi du courrier. Contactez-nous <a href="mailto:martinkilic0812@gmail.com">directement par e-mail</a>.
+                          <h2 class="header col s12 light">Nie udało się wysłać poczty. Skontaktuj się z nami <a href="mailto:martinkilic0812@gmail.com">bezpośrednio poprzez e-mail</a>.
                           </h2>
                           <h4 class="header col s12 light">Catch error: $e</h4>
                           <h4 class="header col s12 light">Mail error: {$mail->ErrorInfo}</h4>
                       </div>
                       <div class="row center">
-                          <a href="de.html" title="back" class="btn-large waves-effect waves-light red">Retourner</a>
+                          <a href="de.html" title="back" class="btn-large waves-effect waves-light red">Wróć</a>
                       </div>
                   </div>
               </div>
