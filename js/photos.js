@@ -2,7 +2,7 @@
 /// PORTRAIT ALBUMS
 ///
 const apartmanDvoristePortrait = 'https://photos.app.goo.gl/6kDWDpqSAY6werKH6';
-const apartmanPlazaPortrait = 'https://photos.app.goo.gl/XXsEkXW95BpmtyiH7';
+const apartmanPlazaPortrait = 'https://photos.app.goo.gl/H7UTLDFLSzGMHTT68';
 const apartmanMarijaPortrait = 'https://photos.app.goo.gl/j5ZDHULGkKQFvEtEA';
 const apartmanJosipPortrait = 'https://photos.app.goo.gl/wNmeGtvuWEkNiwr6A';
 
@@ -10,7 +10,7 @@ const apartmanJosipPortrait = 'https://photos.app.goo.gl/wNmeGtvuWEkNiwr6A';
 /// LANDSCAPE ALBUMS
 ///
 const apartmanDvoristeLandscape = 'https://photos.app.goo.gl/1i464C6NPaSrtooA7';
-const apartmanPlazaLandscape = 'https://photos.app.goo.gl/ygyTCdYyot5ULm5o6';
+const apartmanPlazaLandscape = 'https://photos.app.goo.gl/H7UTLDFLSzGMHTT68';
 const apartmanMarijaLandscape = 'https://photos.app.goo.gl/BtUPxF2SHJ3B1NFd9';
 const apartmanJosipLandscape = 'https://photos.app.goo.gl/A7GCtecZhnMsJoCc7';
 
