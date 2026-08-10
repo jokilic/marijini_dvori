@@ -31,9 +31,9 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
-    require 'PHPMailer/src/PHPMailer.php';
-    require 'PHPMailer/src/SMTP.php';
-    require 'PHPMailer/src/Exception.php';
+    require __DIR__ . '/PHPMailer/src/Exception.php';
+    require __DIR__ . '/PHPMailer/src/PHPMailer.php';
+    require __DIR__ . '/PHPMailer/src/SMTP.php';
 
     error_reporting(0);
 
@@ -44,11 +44,11 @@
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Host = 'smtp.gmail.com';
         $mail->Username = 'martinkilic0812@gmail.com';
         $mail->Password = 'vovb wimv rbng vjfz';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
-        $mail->SMTPSecure = "ssl";
+        $mail->CharSet = PHPMailer::CHARSET_UTF8;
 
         // Sender and recipient
         $from = $_POST['mail'];
@@ -62,7 +62,9 @@
         
         try {
             // Set the sender and recipient
-            $mail->setFrom($from, $firstName . ' ' . $lastName);
+            // Gmail must send from the authenticated account; replies go to the guest.
+            $mail->setFrom($to, 'Marijini dvori');
+            $mail->addReplyTo($from, $firstName . ' ' . $lastName);
             $mail->addAddress($to);
 
             // Set the email subject and body
@@ -92,6 +94,8 @@
     </div>
     <?php
         } catch (Exception $e) {
+            // Keep SMTP details out of the public response while retaining diagnostics.
+            error_log('PHPMailer error: ' . $mail->ErrorInfo);
             // Zobrazit chybovou zprávu
             ?>
             <div class="parallax-container full">
@@ -101,8 +105,6 @@
                         <div class="row center">
                             <h2 class="header col s12 light">Selhalo odeslání e-mailu. Kontaktujte nás <a href="mailto:martinkilic0812@gmail.com">přímo emailem</a>.
                             </h2>
-                            <h4 class="header col s12 light">Chyba při zachycení: $e</h4>
-                            <h4 class="header col s12 light">Chyba e-mailu: {$mail->ErrorInfo}</h4>
                         </div>
                         <div class="row center">
                             <a href="de.html" title="zpět" class="btn-large waves-effect waves-light red">Zpět</a>
