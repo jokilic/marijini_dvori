@@ -39,12 +39,16 @@
     if (isset($_POST['submit'])) {
         $mail = new PHPMailer(true);
 
+        // Keep SMTP credentials outside the public repository.
+        $smtpUsername = trim((string) getenv('SMTP_USERNAME'));
+        $smtpPassword = preg_replace('/\s+/', '', (string) getenv('SMTP_PASSWORD'));
+
         // Configure SMTP settings for Gmail
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'martinkilic0812@gmail.com';
-        $mail->Password = 'vovb wimv rbng vjfz';
+        $mail->Username = $smtpUsername;
+        $mail->Password = $smtpPassword;
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
         $mail->CharSet = PHPMailer::CHARSET_UTF8;
@@ -53,13 +57,17 @@
         $from = $_POST['mail'];
         $firstName = $_POST['firstName'];
         $lastName = $_POST['lastName'];
-        $to = "martinkilic0812@gmail.com";
+        $to = $smtpUsername;
 
         // Email content
         $subject = "Form submission - PL";
         $message = "E-mail adresa: " . $from . "\n\n" . "Ime: " . $firstName . " " . $lastName . "\n\n" . "Datum dolaska: " . $_POST['dateArrival'] . "\n" . "Datum odlaska: " . $_POST['dateDeparture'] . "\n\n" . "Broj osoba: " . $_POST['numberPeople'] . "\n" . "Broj djece: " . $_POST['numberChildren'] . "\n\n" . "Željeni apartman: " . $_POST['apartmentRadio'] . "\n\n" . "Poruka: " . $_POST['question'] . "\n\n";
         
         try {
+            if ($smtpUsername === '' || $smtpPassword === '') {
+                throw new Exception('SMTP credentials are not configured.');
+            }
+
             // Set the sender and recipient
             // Gmail must send from the authenticated account; replies go to the guest.
             $mail->setFrom($to, 'Marijini dvori');

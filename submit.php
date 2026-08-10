@@ -38,12 +38,16 @@
     if (isset($_POST['submit'])) {
         $mail = new PHPMailer(true);
 
+        // Keep SMTP credentials outside the public repository.
+        $smtpUsername = trim((string) getenv('SMTP_USERNAME'));
+        $smtpPassword = preg_replace('/\s+/', '', (string) getenv('SMTP_PASSWORD'));
+
         // Configure SMTP settings for Gmail
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'martinkilic0812@gmail.com';
-        $mail->Password = 'vovb wimv rbng vjfz';
+        $mail->Username = $smtpUsername;
+        $mail->Password = $smtpPassword;
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
         $mail->CharSet = PHPMailer::CHARSET_UTF8;
@@ -52,13 +56,17 @@
         $from = $_POST['mail'];
         $firstName = $_POST['firstName'];
         $lastName = $_POST['lastName'];
-        $to = "martinkilic0812@gmail.com";
+        $to = $smtpUsername;
 
         // Email content
         $subject = "Form submission - HR";
         $message = "E-mail adresa: " . $from . "\n\n" . "Ime: " . $firstName . " " . $lastName . "\n\n" . "Datum dolaska: " . $_POST['dateArrival'] . "\n" . "Datum odlaska: " . $_POST['dateDeparture'] . "\n\n" . "Broj osoba: " . $_POST['numberPeople'] . "\n" . "Broj djece: " . $_POST['numberChildren'] . "\n\n" . "Željeni apartman: " . $_POST['apartmentRadio'] . "\n\n" . "Poruka: " . $_POST['question'] . "\n\n";
-        
+
         try {
+            if ($smtpUsername === '' || $smtpPassword === '') {
+                throw new Exception('SMTP credentials are not configured.');
+            }
+
             // Set the sender and recipient
             // Gmail must send from the authenticated account; replies go to the guest.
             $mail->setFrom($to, 'Marijini dvori');
@@ -91,8 +99,9 @@
             </div>
         <?php
         } catch (Exception $e) {
-            // Keep SMTP details out of the public response while retaining diagnostics.
+            // Retain the error in the server log and show it on the submission page.
             error_log('PHPMailer error: ' . $mail->ErrorInfo);
+            $errorMessage = $mail->ErrorInfo ?: $e->getMessage();
             // Display error message
              ?>
                 <div class="parallax-container full">
@@ -101,6 +110,7 @@
                         <h1 class="header center green-text">Marijini dvori</h1>
                         <div class="row center">
                             <h2 class="header col s12 light">Upit nije poslan. Javite nam se direktno na <a href="mailto:martinkilic0812@gmail.com">martinkilic0812@gmail.com</a>.</h2>
+                            <p class="col s12 light"><?=htmlspecialchars($errorMessage, ENT_QUOTES, 'UTF-8')?></p>
                         </div>
                         <div class="row center">
                             <a href="/" title="back" class="btn-large waves-effect waves-light red">Idi natrag</a>
