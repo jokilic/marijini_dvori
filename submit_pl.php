@@ -39,9 +39,11 @@
     if (isset($_POST['submit'])) {
         $mail = new PHPMailer(true);
 
-        // Keep SMTP credentials outside the public repository.
-        $smtpUsername = trim((string) getenv('SMTP_USERNAME'));
-        $smtpPassword = preg_replace('/\s+/', '', (string) getenv('SMTP_PASSWORD'));
+        // InfinityFree does not expose custom environment variables to PHP.
+        $smtpConfigPath = __DIR__ . '/smtp_config.php';
+        $smtpConfig = is_file($smtpConfigPath) ? require $smtpConfigPath : [];
+        $smtpUsername = trim((string) ($smtpConfig['username'] ?? ''));
+        $smtpPassword = preg_replace('/\s+/', '', (string) ($smtpConfig['app_password'] ?? ''));
 
         // Configure SMTP settings for Gmail
         $mail->isSMTP();
